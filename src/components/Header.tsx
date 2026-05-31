@@ -28,7 +28,7 @@ export default function Header() {
     { label: "Отзывы", href: "#testimonials" },
     { label: "FAQ", href: "#faq" },
     { label: "Контакты", href: "#contacts" },
-    { label: "Official site", href: "https://cosdox.co.kr", external: true },
+    { label: "Official site", href: "https://www.cosdox.co.kr/ru/main/?setLang=kz", external: true },
   ];
 
   const handleLinkClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {

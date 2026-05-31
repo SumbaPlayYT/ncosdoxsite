@@ -85,7 +85,7 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a href="https://cosdox.co.kr" target="_blank" rel="noopener noreferrer" className="text-sage-300 hover:text-[#c5a059] transition-colors">
+                <a href="https://www.cosdox.co.kr/ru/main/?setLang=kz" target="_blank" rel="noopener noreferrer" className="text-sage-300 hover:text-[#c5a059] transition-colors">
                   Official Site
                 </a>
               </li>
