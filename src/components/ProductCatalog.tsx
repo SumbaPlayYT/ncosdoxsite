@@ -22,12 +22,8 @@ export default function ProductCatalog() {
     ? PRODUCTS
     : PRODUCTS.filter(p => p.category === activeCategory);
 
-  const formatPrice = (num: number) => {
-    return new Intl.NumberFormat("ru-RU").format(num) + " ₸";
-  };
-
   const getWhatsAppLink = (product: Product) => {
-    const text = `Здравствуйте, Шнарай! Хочу заказать или проконсультироваться по поводу продукта: "${product.name} ${product.subname || ''}" за ${formatPrice(product.price)}.`;
+    const text = `Здравствуйте, Шнарай! Хочу заказать или проконсультироваться по поводу продукта: "${product.name} ${product.subname || ''}".`;
     return `${EXPERT_INFO.whatsappLink}?text=${encodeURIComponent(text)}`;
   };
 
@@ -118,11 +114,6 @@ export default function ProductCatalog() {
                       <span className="text-[10px] uppercase tracking-widest text-[#c5a059] font-bold font-sans">
                         {categories.find(c => c.key === product.category)?.label || "Космецевтика"}
                       </span>
-                      {product.oldPrice && (
-                        <span className="text-xs text-rose-500 line-through font-sans">
-                          {formatPrice(product.oldPrice)}
-                        </span>
-                      )}
                     </div>
                     <h3 className="text-lg font-serif font-bold text-sage-950 leading-snug group-hover:text-emerald-700 transition-colors">
                       {product.name}
@@ -137,10 +128,7 @@ export default function ProductCatalog() {
                     </p>
                   </div>
 
-                  <div className="pt-4 border-t border-sage-100 flex items-center justify-between">
-                    <span className="text-base font-serif font-bold text-sage-950">
-                      {formatPrice(product.price)}
-                    </span>
+                  <div className="pt-4 border-t border-sage-100 flex items-center justify-end">
                     <button
                       onClick={() => setSelectedProduct(product)}
                       className="text-xs font-semibold uppercase tracking-wider text-[#c5a059] hover:text-emerald-600 transition-colors font-sans flex items-center gap-1"
@@ -203,19 +191,13 @@ export default function ProductCatalog() {
                       )}
                     </div>
 
-                    {/* Price and Action Buttons */}
-                    <div className="p-4 rounded-xl bg-sage-50 flex items-center justify-between">
-                      <div className="flex flex-col">
-                        <span className="text-[10px] text-sage-500 font-sans uppercase font-semibold">Цена продукта</span>
-                        <span className="text-xl sm:text-2xl font-serif font-bold text-sage-950">
-                          {formatPrice(selectedProduct.price)}
-                        </span>
-                      </div>
+                    {/* Action Buttons */}
+                    <div className="p-4 rounded-xl bg-sage-50 flex items-center justify-center">
                       <a
                         href={getWhatsAppLink(selectedProduct)}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-emerald-500 text-white font-bold text-xs uppercase tracking-widest shadow hover:bg-emerald-600 transition-colors"
+                        className="inline-flex items-center justify-center gap-2 w-full px-6 py-3 rounded-full bg-emerald-500 text-white font-bold text-xs uppercase tracking-widest shadow hover:bg-emerald-600 transition-colors text-center"
                       >
                         <ShoppingBag className="w-4 h-4" />
                         Заказать в WhatsApp
