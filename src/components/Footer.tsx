@@ -79,6 +79,16 @@ export default function Footer() {
                   Отзывы клиентов
                 </a>
               </li>
+              <li>
+                <a href="#contacts" className="text-sage-300 hover:text-[#c5a059] transition-colors">
+                  Контакты
+                </a>
+              </li>
+              <li>
+                <a href="https://cosdox.co.kr" target="_blank" rel="noopener noreferrer" className="text-sage-300 hover:text-[#c5a059] transition-colors">
+                  Official Site
+                </a>
+              </li>
             </ul>
           </div>
 
@@ -90,14 +100,36 @@ export default function Footer() {
             <ul className="space-y-4 text-sm">
               <li className="flex items-center space-x-3 text-sage-300">
                 <Phone className="w-4 h-4 text-[#c5a059] flex-shrink-0" />
-                <a href={`tel:${EXPERT_INFO.phone.replace(/\s/g, "")}`} className="hover:text-white">
+                <a href={`tel:${EXPERT_INFO.phone.replace(/\s/g, "")}`} className="hover:text-white transition-colors">
                   {EXPERT_INFO.phone}
                 </a>
               </li>
               <li className="flex items-center space-x-3 text-sage-300">
+                <svg className="w-4 h-4 text-[#c5a059] flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12.011 2C6.485 2 2.002 6.482 2 12.008c0 1.765.459 3.486 1.332 5.002L2 22l5.122-1.343a9.988 9.988 0 004.887 1.28c5.526 0 10.009-4.482 10.011-10.008C22.022 6.483 17.538 2 12.011 2h0z" />
+                </svg>
+                <a href={EXPERT_INFO.whatsappLink} target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
+                  WhatsApp Эксперта
+                </a>
+              </li>
+              <li className="flex items-center space-x-3 text-sage-300">
+                <svg className="w-4 h-4 text-[#c5a059] flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.02 1.59 4.23.86.17 1.77.26 2.62.39v3.49c-.93-.19-1.89-.35-2.8-.62-.35-.09-.69-.22-1-.38v7.24a7.925 7.925 0 01-13.88 5.12 7.925 7.925 0 014.28-12.82c.04 1.48.5 2.94 1.34 4.14a4.341 4.341 0 00-1.84 5.3 4.341 4.341 0 006.49 1.94 4.341 4.341 0 001.29-2.9v-15.1z" />
+                </svg>
+                <a href={EXPERT_INFO.tiktok} target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
+                  @shnaraycosdox
+                </a>
+              </li>
+              <li className="flex items-center space-x-3 text-sage-300">
+                <Instagram className="w-4 h-4 text-[#c5a059] flex-shrink-0" />
+                <a href={EXPERT_INFO.instagram} target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
+                  @cosdox.ala
+                </a>
+              </li>
+              <li className="flex items-center space-x-3 text-sage-300">
                 <Mail className="w-4 h-4 text-[#c5a059] flex-shrink-0" />
-                <a href="mailto:shnarai.cosdox@gmail.com" className="hover:text-white">
-                  shnarai.cosdox@gmail.com
+                <a href={`mailto:${EXPERT_INFO.email}`} className="hover:text-white transition-colors">
+                  {EXPERT_INFO.email}
                 </a>
               </li>
               <li className="flex items-center space-x-3 text-sage-300">

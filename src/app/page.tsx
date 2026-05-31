@@ -11,6 +11,7 @@ import Testimonials from "@/components/Testimonials";
 import ConsultationSteps from "@/components/ConsultationSteps";
 import FAQ from "@/components/FAQ";
 import LeadForm from "@/components/LeadForm";
+import Contacts from "@/components/Contacts";
 import Footer from "@/components/Footer";
 
 export default function Home() {
@@ -46,6 +47,9 @@ export default function Home() {
 
         {/* Dual Column WhatsApp Lead Capture */}
         <LeadForm />
+
+        {/* Premium Contacts Section */}
+        <Contacts />
       </main>
 
       {/* Premium Dark Forest-Green Footer */}

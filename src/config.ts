@@ -34,7 +34,8 @@ export const EXPERT_INFO = {
   phone: "+7 777 286 77 42",
   whatsappLink: "https://wa.me/77772867742",
   instagram: "https://www.instagram.com/cosdox.ala",
-  tiktok: "https://www.tiktok.com/@skindox.cosdox",
+  tiktok: "https://www.tiktok.com/@shnaraycosdox",
+  email: "parizhanka22@gmail.com",
   location: "г. Шымкент, Казахстан",
   bio: [
     "Медицина — не просто моя профессия, а часть моей жизни уже более 20 лет. Я имею медицинское образование по специальности фельдшер и многолетний практический опыт в сфере здоровья и восстановления организма.",

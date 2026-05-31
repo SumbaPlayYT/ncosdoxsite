@@ -27,14 +27,18 @@ export default function Header() {
     { label: "Каталог", href: "#catalog" },
     { label: "Отзывы", href: "#testimonials" },
     { label: "FAQ", href: "#faq" },
+    { label: "Контакты", href: "#contacts" },
+    { label: "Official site", href: "https://cosdox.co.kr", external: true },
   ];
 
   const handleLinkClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
-    e.preventDefault();
-    setIsMobileMenuOpen(false);
-    const targetElement = document.querySelector(href);
-    if (targetElement) {
-      targetElement.scrollIntoView({ behavior: "smooth" });
+    if (href.startsWith("#")) {
+      e.preventDefault();
+      setIsMobileMenuOpen(false);
+      const targetElement = document.querySelector(href);
+      if (targetElement) {
+        targetElement.scrollIntoView({ behavior: "smooth" });
+      }
     }
   };
 
@@ -65,6 +69,8 @@ export default function Header() {
                 key={link.href}
                 href={link.href}
                 onClick={(e) => handleLinkClick(e, link.href)}
+                target={link.external ? "_blank" : undefined}
+                rel={link.external ? "noopener noreferrer" : undefined}
                 className="text-sm font-medium text-[#171717]/85 hover:text-emerald-500 transition-colors duration-200"
               >
                 {link.label}
@@ -133,6 +139,8 @@ export default function Header() {
               key={link.href}
               href={link.href}
               onClick={(e) => handleLinkClick(e, link.href)}
+              target={link.external ? "_blank" : undefined}
+              rel={link.external ? "noopener noreferrer" : undefined}
               className="text-base font-semibold text-[#171717] hover:text-emerald-500 transition-colors py-2 border-b border-sage-50"
             >
               {link.label}
