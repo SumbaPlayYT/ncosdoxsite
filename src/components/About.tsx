@@ -20,10 +20,10 @@ export default function About() {
           <div className="lg:col-span-5 relative">
             <div className="relative aspect-[3/4] w-full max-w-[400px] lg:max-w-none mx-auto rounded-3xl overflow-hidden shadow-xl border-8 border-white bg-white">
               <Image
-                src="/images/shnarai2.jpg"
-                alt="Шнарай за работой"
+                src="/images/shnarai3.jpg"
+                alt="Шнарай"
                 fill
-                className="object-cover object-[center_10%]"
+                className="object-cover object-center"
                 sizes="(max-w-7xl) 100vw, 400px"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-sage-950/30 via-transparent to-transparent pointer-events-none" />
