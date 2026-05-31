@@ -31,9 +31,9 @@ export const EXPERT_INFO = {
   name: "Шнарай",
   title: "Медицинский эксперт по здоровью и функциональному уходу за кожей",
   experienceYears: 20,
-  phone: "+7 700 304 92 60",
-  whatsappLink: "https://wa.me/77003049260",
-  instagram: "https://www.instagram.com/skindox.shym",
+  phone: "+7 777 286 77 42",
+  whatsappLink: "https://wa.me/77772867742",
+  instagram: "https://www.instagram.com/cosdox.ala",
   tiktok: "https://www.tiktok.com/@skindox.cosdox",
   location: "г. Шымкент, Казахстан",
   bio: [

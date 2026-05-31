@@ -106,7 +106,7 @@ export default function About() {
                 className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-white text-emerald-500 border border-sage-200 text-xs font-bold uppercase tracking-wider font-sans hover:bg-sage-50 transition-colors"
               >
                 <Instagram className="w-4 h-4" />
-                <span>skindox.shym</span>
+                <span>cosdox.ala</span>
               </a>
               <a
                 href={EXPERT_INFO.tiktok}
