@@ -1,0 +1,90 @@
+@import "tailwindcss";
+
+@theme {
+  --color-sage-50: #f4f6f4;
+  --color-sage-100: #e8ece9;
+  --color-sage-200: #d7dedb;
+  --color-sage-300: #adbdb7;
+  --color-sage-800: #2a3c32;
+  --color-sage-950: #121d17;
+  --color-emerald-500: #0b4528;
+  --color-emerald-600: #093720;
+  --color-emerald-700: #072b19;
+  --color-cream: #fafaf6;
+  --color-cream-dark: #f2f2eb;
+  --color-gold-400: #d4b574;
+  --color-gold-500: #c5a059;
+  --color-gold-600: #a88444;
+
+  --font-serif: var(--font-playfair), Georgia, serif;
+  --font-sans: var(--font-outfit), sans-serif;
+  
+  --animate-fade-in: fade-in 0.8s ease-out forwards;
+  --animate-slide-up: slide-up 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slide-up {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Custom base styles */
+body {
+  font-family: var(--font-outfit), sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-playfair), Georgia, serif;
+}
+
+/* Custom premium classes */
+.premium-gradient {
+  background: linear-gradient(135deg, #0b4528 0%, #121d17 100%);
+}
+
+.cream-gradient {
+  background: linear-gradient(180deg, #fafaf6 0%, #f2f2eb 100%);
+}
+
+.glass-panel {
+  background: rgba(250, 250, 246, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.glass-panel-dark {
+  background: rgba(18, 29, 23, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f4f6f4;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #adbdb7;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #2a3c32;
+}
+
+/* Scroll padding to avoid sticky nav overlapping section titles */
+html {
+  scroll-padding-top: 80px;
+}
