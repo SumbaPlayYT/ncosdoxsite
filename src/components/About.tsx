@@ -41,7 +41,7 @@ export default function About() {
 
             {/* Float Premium Card */}
             <motion.div
-              className="absolute -bottom-6 -right-4 bg-emerald-500 text-white p-5 rounded-2xl shadow-xl hidden sm:block max-w-[200px] text-left border border-emerald-600"
+              className="absolute -top-6 -right-4 bg-emerald-500 text-white p-5 rounded-2xl shadow-xl hidden sm:block max-w-[200px] text-left border border-emerald-600"
               initial={{ opacity: 0, x: 20 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
