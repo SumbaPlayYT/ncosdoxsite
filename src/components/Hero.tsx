@@ -77,7 +77,7 @@ export default function Hero() {
                   <ShieldCheck className="w-3.5 h-3.5" />
                 </div>
                 <span>
-                  <strong>20+ лет опыта:</strong> медицинский подход фельдшера к диагностике состояния кожи.
+                  <strong>20+ лет опыта:</strong> профессиональный медицинский подход к диагностике состояния кожи.
                 </span>
               </li>
               <li className="flex items-start gap-3">
@@ -151,7 +151,7 @@ export default function Hero() {
                   Шнарай
                 </div>
                 <div className="text-sage-800 text-xs font-sans mt-1">
-                  Дипломированный фельдшер и топ-специалист COSDOX
+                  Специалист с медицинским образованием и топ-эксперт COSDOX
                 </div>
               </motion.div>
             </motion.div>

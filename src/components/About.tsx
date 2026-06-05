@@ -80,7 +80,7 @@ export default function About() {
                     Образование
                   </h4>
                   <p className="text-xs text-[#171717]/70 font-sans mt-0.5">
-                    Диплом фельдшера
+                    Медицинское
                   </p>
                 </div>
               </div>
