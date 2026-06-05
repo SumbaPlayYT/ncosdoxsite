@@ -7,6 +7,10 @@ const nextConfig: NextConfig = {
         protocol: "https",
         hostname: "static.tildacdn.pro",
       },
+      {
+        protocol: "https",
+        hostname: "erp.cosdox.com",
+      },
     ],
   },
   turbopack: {
