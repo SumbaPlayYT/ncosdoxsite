@@ -57,8 +57,8 @@ export default function Header() {
             <span className="text-xl font-bold tracking-widest text-emerald-500 font-serif">
               COSDOX
             </span>
-            <span className="text-[10px] uppercase tracking-[0.2em] text-[#c5a059] -mt-1 font-semibold">
-              Эксперт Шнарай
+            <span className="text-[10px] uppercase tracking-[0.2em] text-[#c5a059] -mt-1 font-bold">
+              KAZAKHSTAN
             </span>
           </div>
 
