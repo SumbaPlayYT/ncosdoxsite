@@ -20,7 +20,7 @@ export default function Footer() {
                 COSDOX
               </span>
               <span className="text-xs uppercase tracking-[0.2em] text-sage-300 font-semibold">
-                Медицинский Эксперт Шнарай
+                Партнер Шнарай
               </span>
             </div>
             <p className="text-sm text-sage-300 max-w-sm leading-relaxed mb-6">
@@ -109,7 +109,7 @@ export default function Footer() {
                   <path d="M12.011 2C6.485 2 2.002 6.482 2 12.008c0 1.765.459 3.486 1.332 5.002L2 22l5.122-1.343a9.988 9.988 0 004.887 1.28c5.526 0 10.009-4.482 10.011-10.008C22.022 6.483 17.538 2 12.011 2h0z" />
                 </svg>
                 <a href={EXPERT_INFO.whatsappLink} target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
-                  WhatsApp Эксперта
+                  WhatsApp Партнера
                 </a>
               </li>
               <li className="flex items-center space-x-3 text-sage-300">

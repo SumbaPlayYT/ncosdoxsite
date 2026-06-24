@@ -7,7 +7,6 @@ import TrustPanel from "@/components/TrustPanel";
 import About from "@/components/About";
 import Science from "@/components/Science";
 import ProductCatalog from "@/components/ProductCatalog";
-import Testimonials from "@/components/Testimonials";
 import ConsultationSteps from "@/components/ConsultationSteps";
 import FAQ from "@/components/FAQ";
 import LeadForm from "@/components/LeadForm";
@@ -24,11 +23,11 @@ export default function Home() {
         {/* Modern Split-Layout Hero */}
         <Hero />
 
-        {/* Core Clinical Trust Badges */}
-        <TrustPanel />
-
         {/* In-depth Medical Story Bio */}
         <About />
+
+        {/* Core Clinical Trust Badges */}
+        <TrustPanel />
 
         {/* Advanced Liposomal & Factory Science Section */}
         <Science />
@@ -38,9 +37,6 @@ export default function Home() {
 
         {/* Steps Chronological Path Timeline */}
         <ConsultationSteps />
-
-        {/* Dynamic Reviews Carousel */}
-        <Testimonials />
 
         {/* Animated Framer Accordion FAQ */}
         <FAQ />

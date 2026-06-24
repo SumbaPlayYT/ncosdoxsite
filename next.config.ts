@@ -11,6 +11,10 @@ const nextConfig: NextConfig = {
         protocol: "https",
         hostname: "erp.cosdox.com",
       },
+      {
+        protocol: "https",
+        hostname: "www.cosdox.co.kr",
+      },
     ],
   },
   turbopack: {

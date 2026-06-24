@@ -19,7 +19,7 @@ export default function Contacts() {
     },
     {
       name: "WhatsApp",
-      value: "Написать эксперту",
+      value: "Написать партнеру",
       href: EXPERT_INFO.whatsappLink,
       icon: (
         <svg className="w-6 h-6 text-emerald-500" fill="currentColor" viewBox="0 0 24 24">
@@ -79,7 +79,7 @@ export default function Contacts() {
         {/* Intro */}
         <div className="text-center max-w-2xl mx-auto mb-16">
           <span className="text-xs uppercase tracking-[0.2em] text-[#c5a059] font-bold font-sans">
-            Связь с экспертом
+            Связь с партнером
           </span>
           <h2 className="text-3xl sm:text-4xl font-serif font-bold text-sage-950 mt-2">
             Контакты

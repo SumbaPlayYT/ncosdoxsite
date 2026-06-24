@@ -67,7 +67,7 @@ export default function LeadForm() {
                 </div>
                 <div>
                   <h4 className="font-semibold text-white">100% Конфиденциальность</h4>
-                  <p className="text-sage-400 text-[10px]">Ваши данные передаются только эксперту</p>
+                  <p className="text-sage-400 text-[10px]">Ваши данные передаются только партнеру</p>
                 </div>
               </div>
               <div className="flex items-center gap-3">

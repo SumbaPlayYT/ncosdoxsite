@@ -25,7 +25,6 @@ export default function Header() {
     { label: "Обо мне", href: "#about" },
     { label: "Технология", href: "#science" },
     { label: "Каталог", href: "#catalog" },
-    { label: "Отзывы", href: "#testimonials" },
     { label: "FAQ", href: "#faq" },
     { label: "Контакты", href: "#contacts" },
     { label: "Official site", href: "https://www.cosdox.co.kr/ru/main/?setLang=kz", external: true },

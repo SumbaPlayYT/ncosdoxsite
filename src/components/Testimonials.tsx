@@ -72,7 +72,7 @@ export default function Testimonials() {
                 <div className="pt-8 mt-8 border-t border-sage-100 flex flex-col sm:flex-row sm:items-center justify-between gap-4 font-sans text-sm">
                   <div>
                     <h4 className="font-bold text-sage-950 text-base">{REVIEWS[activeIndex].name}</h4>
-                    <p className="text-xs text-sage-500 font-medium">Клиент эксперта Шнарай</p>
+                    <p className="text-xs text-sage-500 font-medium">Клиент партнера Шнарай</p>
                   </div>
                   
                   {/* Monitoring Timeframe Badge */}

@@ -63,7 +63,7 @@ export default function About() {
           <div className="lg:col-span-7 space-y-6 sm:space-y-8 text-left">
             <div className="space-y-3">
               <span className="text-xs uppercase tracking-[0.2em] text-[#c5a059] font-bold font-sans block">
-                Ваш эксперт по красоте и здоровью
+                Ваш партнер по красоте и здоровью
               </span>
               <h2 className="text-3xl sm:text-4xl font-serif font-bold text-sage-950 leading-tight">
                 Позвольте представиться, <br />

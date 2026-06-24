@@ -3,8 +3,13 @@
 import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { ShieldCheck, Sparkles, ArrowRight } from "@/components/Icons";
-import { EXPERT_INFO } from "@/config";
+import { 
+  Sparkles, 
+  MapPin, 
+  UserCheck, 
+  Factory, 
+  Award
+} from "@/components/Icons";
 
 export default function Hero() {
   const containerVariants: any = {
@@ -12,25 +17,25 @@ export default function Hero() {
     visible: {
       opacity: 1,
       transition: {
-        staggerChildren: 0.15,
+        staggerChildren: 0.1,
         delayChildren: 0.1,
       },
     },
   };
 
   const itemVariants: any = {
-    hidden: { opacity: 0, y: 25 },
+    hidden: { opacity: 0, y: 20 },
     visible: {
       opacity: 1,
       y: 0,
-      transition: { duration: 0.8, ease: "easeOut" },
+      transition: { duration: 0.6, ease: "easeOut" },
     },
   };
 
   return (
     <section
       id="hero"
-      className="relative min-h-screen flex items-center justify-center pt-24 pb-16 overflow-hidden cream-gradient"
+      className="relative min-h-screen flex items-center justify-center pt-28 pb-16 overflow-hidden cream-gradient"
     >
       {/* Premium Ambient Background Gradients */}
       <div className="absolute top-[-10%] right-[-10%] w-[50%] h-[50%] rounded-full bg-emerald-500/5 blur-[120px] pointer-events-none" />
@@ -38,9 +43,10 @@ export default function Hero() {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
-          {/* Hero Content Left */}
+          
+          {/* Hero Content Left - Brand Details */}
           <motion.div
-            className="lg:col-span-7 space-y-6 sm:space-y-8 text-left"
+            className="lg:col-span-7 space-y-6 text-left"
             variants={containerVariants}
             initial="hidden"
             animate="visible"
@@ -50,89 +56,124 @@ export default function Hero() {
               variants={itemVariants}
               className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-emerald-500/8 border border-emerald-500/15 text-emerald-700 text-xs font-semibold uppercase tracking-wider font-sans"
             >
-              <Sparkles className="w-3.5 h-3.5 text-gold-500" />
-              <span>Профессиональный медицинский подход</span>
+              <Sparkles className="w-3.5 h-3.5 text-gold-500 animate-pulse" />
+              <span>Официальные данные о бренде</span>
             </motion.div>
 
             {/* Main Headline */}
-            <motion.div variants={itemVariants} className="space-y-4">
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-serif font-bold text-sage-950 leading-[1.1] tracking-tight">
-                Красота без компромиссов:{" "}
-                <span className="relative inline-block text-emerald-500">
-                  липосомальный
-                  <span className="absolute left-0 bottom-1 w-full h-[4px] bg-[#c5a059]/30 -skew-x-12" />
-                </span>{" "}
-                уход COSDOX
+            <motion.div variants={itemVariants} className="space-y-2">
+              <h1 className="text-4xl sm:text-5xl font-serif font-bold text-sage-950 leading-[1.2] tracking-tight">
+                О бренде <span className="text-emerald-500 font-serif">COSDOX</span>
               </h1>
-              <p className="text-lg sm:text-xl text-[#171717]/75 font-sans font-light leading-relaxed max-w-xl">
-                Индивидуальный подбор средств премиум-класса и полное сопровождение от сертифицированного медицинского эксперта{" "}
-                <span className="font-semibold text-emerald-600 font-serif">Шнарай</span> для сияния и здоровья вашей кожи.
-              </p>
+              <div className="w-16 h-[3px] bg-emerald-500" />
             </motion.div>
 
-            {/* Bullet Points of Value */}
-            <motion.ul variants={itemVariants} className="space-y-3.5 font-sans text-sm sm:text-base text-sage-800">
-              <li className="flex items-start gap-3">
-                <div className="w-5.5 h-5.5 rounded-full bg-emerald-500/10 flex items-center justify-center text-emerald-600 flex-shrink-0 mt-0.5">
-                  <ShieldCheck className="w-3.5 h-3.5" />
+            {/* Brand Detailed Stack */}
+            <div className="space-y-4 font-sans text-sm sm:text-base text-sage-800">
+              
+              {/* 1. COSDOX в Казахстане */}
+              <motion.div 
+                variants={itemVariants}
+                className="p-4 rounded-xl border border-sage-200/50 bg-white/70 backdrop-blur-sm shadow-sm flex gap-3.5 items-start hover:border-emerald-500/20 transition-all duration-300"
+              >
+                <div className="w-9 h-9 rounded-lg bg-emerald-500/8 text-emerald-600 flex items-center justify-center flex-shrink-0 mt-0.5">
+                  <MapPin className="w-5 h-5 text-emerald-600" />
                 </div>
-                <span>
-                  <strong>20+ лет опыта:</strong> профессиональный медицинский подход к диагностике состояния кожи.
-                </span>
-              </li>
-              <li className="flex items-start gap-3">
-                <div className="w-5.5 h-5.5 rounded-full bg-emerald-500/10 flex items-center justify-center text-emerald-600 flex-shrink-0 mt-0.5">
-                  <ShieldCheck className="w-3.5 h-3.5" />
+                <div className="space-y-1">
+                  <h4 className="text-sm font-serif font-bold text-sage-950">
+                    COSDOX в Казахстане
+                  </h4>
+                  <p className="text-xs text-[#171717]/80 leading-relaxed font-light">
+                    Официальное представительство COSDOX в Казахстане — <strong>ТОО «COSDOX.KZ»</strong>, зарегистрированное в Алматы по адресу: ул. Богенбай батыра, 150. Руководитель представительства — Хван Джин Ок (Hwang Jin Ok).
+                  </p>
+                  <p className="text-xs text-[#171717]/80 leading-relaxed font-light">
+                    Партнёром COSDOX в Казахстане является <strong>Шнарай</strong>, что способствует развитию локального присутствия бренда и доступности продукции на рынке Казахстана.
+                  </p>
                 </div>
-                <span>
-                  <strong>Липосомальная доставка:</strong> активы глубокого проникновения от южнокорейского завода CNF.
-                </span>
-              </li>
-              <li className="flex items-start gap-3">
-                <div className="w-5.5 h-5.5 rounded-full bg-emerald-500/10 flex items-center justify-center text-emerald-600 flex-shrink-0 mt-0.5">
-                  <ShieldCheck className="w-3.5 h-3.5" />
-                </div>
-                <span>
-                  <strong>Иммунный уход:</strong> оздоровление организма изнутри с трансфер факторами 4Life.
-                </span>
-              </li>
-            </motion.ul>
+              </motion.div>
 
-            {/* Action Buttons */}
-            <motion.div
+              {/* 2. Штаб-квартира COSDOX */}
+              <motion.div 
+                variants={itemVariants}
+                className="p-4 rounded-xl border border-sage-200/50 bg-white/70 backdrop-blur-sm shadow-sm flex gap-3.5 items-start hover:border-emerald-500/20 transition-all duration-300"
+              >
+                <div className="w-9 h-9 rounded-lg bg-emerald-500/8 text-emerald-600 flex items-center justify-center flex-shrink-0 mt-0.5">
+                  <Factory className="w-5 h-5 text-emerald-600" />
+                </div>
+                <div className="space-y-1">
+                  <h4 className="text-sm font-serif font-bold text-sage-950">
+                    Штаб-квартира COSDOX
+                  </h4>
+                  <p className="text-xs text-[#171717]/80 leading-relaxed font-light">
+                    Головной офис COSDOX расположен в Сеуле, Республика Корея: 서울특별시 동작구 남부순환로 2053 (사당동), 1–2 этаж. Это подтверждает официальное присутствие бренда в Южной Корее и его связь с головной компанией. Генеральный директор COSDOX — Hwang Jin Ok.
+                  </p>
+                </div>
+              </motion.div>
+
+              {/* 3. Генеральный директор */}
+              <motion.div 
+                variants={itemVariants}
+                className="p-4 rounded-xl border border-sage-200/50 bg-white/70 backdrop-blur-sm shadow-sm flex gap-3.5 items-start hover:border-emerald-500/20 transition-all duration-300"
+              >
+                <div className="w-9 h-9 rounded-lg bg-emerald-500/8 text-emerald-600 flex items-center justify-center flex-shrink-0 mt-0.5">
+                  <UserCheck className="w-5 h-5 text-emerald-600" />
+                </div>
+                <div className="space-y-1">
+                  <h4 className="text-sm font-serif font-bold text-sage-950">
+                    Генеральный директор
+                  </h4>
+                  <p className="text-xs text-[#171717]/80 leading-relaxed font-light">
+                    <strong>Hwang Jin Ok</strong> возглавляет COSDOX и участвует в формировании стратегии компании. Под его руководством бренд делает акцент на качестве продукции, инновационных разработках и расширении международного присутствия. Его подход основан на сочетании технологичности, научного подхода и философии осознанного ухода за кожей.
+                  </p>
+                </div>
+              </motion.div>
+
+            </div>
+
+            {/* Highlights Grid */}
+            <motion.div 
               variants={itemVariants}
-              className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-2"
+              className="grid grid-cols-2 gap-4 pt-4 border-t border-sage-200/60"
             >
-              <a
-                href="#lead-form"
-                className="group inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-emerald-500 text-white font-medium text-sm tracking-wider uppercase shadow-md hover:bg-emerald-600 hover:shadow-lg transition-all duration-300"
-              >
-                <span>Получить разбор кожи</span>
-                <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
-              </a>
-              <a
-                href="#catalog"
-                className="inline-flex items-center justify-center px-8 py-4 rounded-full bg-white text-emerald-700 font-medium text-sm tracking-wider uppercase border border-sage-200 hover:bg-sage-50 transition-colors duration-300"
-              >
-                Смотреть каталог
-              </a>
+              <div className="flex gap-2.5">
+                <Award className="w-4.5 h-4.5 text-[#c5a059] flex-shrink-0 mt-0.5" />
+                <div>
+                  <h5 className="text-[11px] font-semibold uppercase tracking-wider text-sage-950 font-sans">
+                    Категория бренда
+                  </h5>
+                  <p className="text-[11px] text-[#171717]/70 font-sans mt-0.5 leading-snug">
+                    Функциональная нанокосмецевтика
+                  </p>
+                </div>
+              </div>
+              <div className="flex gap-2.5">
+                <Award className="w-4.5 h-4.5 text-[#c5a059] flex-shrink-0 mt-0.5" />
+                <div>
+                  <h5 className="text-[11px] font-semibold uppercase tracking-wider text-sage-950 font-sans">
+                    Технологии
+                  </h5>
+                  <p className="text-[11px] text-[#171717]/70 font-sans mt-0.5 leading-snug">
+                    Липосомальная трансдермальная доставка
+                  </p>
+                </div>
+              </div>
             </motion.div>
           </motion.div>
 
           {/* Hero Image Right */}
           <div className="lg:col-span-5 relative">
             <motion.div
-              className="relative w-full max-w-[420px] lg:max-w-none mx-auto aspect-[3/4] rounded-2xl overflow-hidden shadow-2xl border-4 border-white bg-sage-100"
+              className="relative w-full max-w-[420px] lg:max-w-none mx-auto aspect-[3/4] rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-sage-100"
               initial={{ opacity: 0, scale: 0.95 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 1, ease: "easeOut" }}
             >
               <Image
-                src="/images/shnarai1.jpg"
-                alt="Эксперт Шнарай"
+                src="https://www.cosdox.co.kr/img/about_img03.jpg"
+                alt="COSDOX корейская косметика"
                 fill
                 priority
-                className="object-cover object-[center_20%]"
+                className="object-cover object-center"
                 sizes="(max-w-7xl) 100vw, 420px"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-sage-950/40 via-transparent to-transparent pointer-events-none" />
@@ -145,32 +186,33 @@ export default function Hero() {
                 transition={{ delay: 0.6, duration: 0.8 }}
               >
                 <div className="text-[#c5a059] text-xs font-bold uppercase tracking-wider font-sans">
-                  Ваш эксперт по красоте
+                  Официальное представительство в РК
                 </div>
-                <div className="text-sage-950 text-xl font-bold font-serif leading-tight">
-                  Шнарай
+                <div className="text-sage-950 text-lg font-bold font-serif leading-tight">
+                  ТОО «COSDOX.KZ»
                 </div>
                 <div className="text-sage-800 text-xs font-sans mt-1">
-                  Специалист с медицинским образованием и топ-эксперт COSDOX
+                  г. Алматы, ул. Богенбай батыра, 150
                 </div>
               </motion.div>
             </motion.div>
 
-            {/* Float Experience Indicator Right */}
+            {/* Float Experience/Brand Indicator Right */}
             <motion.div
               className="absolute -top-6 -right-4 bg-[#c5a059] text-white p-4.5 rounded-2xl shadow-xl hidden sm:flex flex-col items-center justify-center font-sans tracking-wide text-center"
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ delay: 0.8, type: "spring", stiffness: 100 }}
             >
-              <span className="text-2xl font-bold font-serif">20+</span>
+              <span className="text-2xl font-bold font-serif">100%</span>
               <span className="text-[10px] uppercase font-semibold tracking-wider leading-none">
-                лет опыта
+                Оригинал
               </span>
-              <span className="text-[9px] text-white/90">в медицине</span>
+              <span className="text-[9px] text-white/90">из Южной Кореи</span>
             </motion.div>
           </div>
         </div>
+
       </div>
     </section>
   );
