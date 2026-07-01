@@ -20,7 +20,7 @@ export default function Footer() {
                 COSDOX
               </span>
               <span className="text-xs uppercase tracking-[0.2em] text-sage-300 font-semibold">
-                Партнер Шнарай
+                Партнер Шнарай Байболова
               </span>
             </div>
             <p className="text-sm text-sage-300 max-w-sm leading-relaxed mb-6">
@@ -117,13 +117,13 @@ export default function Footer() {
                   <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.02 1.59 4.23.86.17 1.77.26 2.62.39v3.49c-.93-.19-1.89-.35-2.8-.62-.35-.09-.69-.22-1-.38v7.24a7.925 7.925 0 01-13.88 5.12 7.925 7.925 0 014.28-12.82c.04 1.48.5 2.94 1.34 4.14a4.341 4.341 0 00-1.84 5.3 4.341 4.341 0 006.49 1.94 4.341 4.341 0 001.29-2.9v-15.1z" />
                 </svg>
                 <a href={EXPERT_INFO.tiktok} target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
-                  @shnaraycosdox
+                  @cosdox.com.kz
                 </a>
               </li>
               <li className="flex items-center space-x-3 text-sage-300">
                 <Instagram className="w-4 h-4 text-[#c5a059] flex-shrink-0" />
                 <a href={EXPERT_INFO.instagram} target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
-                  @cosdox.ala
+                  @cosdox.com.kz
                 </a>
               </li>
               <li className="flex items-center space-x-3 text-sage-300">

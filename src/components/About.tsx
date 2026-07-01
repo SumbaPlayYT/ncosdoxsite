@@ -67,7 +67,7 @@ export default function About() {
               </span>
               <h2 className="text-3xl sm:text-4xl font-serif font-bold text-sage-950 leading-tight">
                 Позвольте представиться, <br />
-                <span className="text-emerald-500">Шнарай</span>
+                <span className="text-emerald-500">Шнарай Байболова</span>
               </h2>
               <div className="w-20 h-[3px] bg-emerald-500 mt-2" />
             </div>
@@ -116,7 +116,7 @@ export default function About() {
                 className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-white text-emerald-500 border border-sage-200 text-xs font-bold uppercase tracking-wider font-sans hover:bg-sage-50 transition-colors"
               >
                 <Instagram className="w-4 h-4" />
-                <span>cosdox.ala</span>
+                <span>cosdox.com.kz</span>
               </a>
               <a
                 href={EXPERT_INFO.tiktok}
@@ -128,7 +128,7 @@ export default function About() {
                 <svg className="w-4 h-4 text-rose-500 fill-current" viewBox="0 0 24 24">
                   <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.02 1.59 4.23.86.17 1.77.26 2.62.39v3.49c-.93-.19-1.89-.35-2.8-.62-.35-.09-.69-.22-1-.38v7.24a7.925 7.925 0 01-13.88 5.12 7.925 7.925 0 014.28-12.82c.04 1.48.5 2.94 1.34 4.14a4.341 4.341 0 00-1.84 5.3 4.341 4.341 0 006.49 1.94 4.341 4.341 0 001.29-2.9v-15.1z" />
                 </svg>
-                <span>@shnaraycosdox</span>
+                <span>@cosdox.com.kz</span>
               </a>
             </div>
           </div>

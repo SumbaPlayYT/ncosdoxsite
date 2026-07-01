@@ -31,7 +31,7 @@ export default function Contacts() {
     },
     {
       name: "TikTok",
-      value: "@shnaraycosdox",
+      value: "@cosdox.com.kz",
       href: EXPERT_INFO.tiktok,
       icon: (
         <svg className="w-6 h-6 text-[#171717]" fill="currentColor" viewBox="0 0 24 24">
@@ -43,7 +43,7 @@ export default function Contacts() {
     },
     {
       name: "Instagram",
-      value: "@cosdox.ala",
+      value: "@cosdox.com.kz",
       href: EXPERT_INFO.instagram,
       icon: (
         <svg className="w-6 h-6 text-rose-500" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24">
