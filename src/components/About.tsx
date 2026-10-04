@@ -5,7 +5,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { Instagram, Play, Sparkles, Award } from "@/components/Icons";
 import { EXPERT_INFO } from "@/config";
-import CustomVideoPlayer from "@/components/CustomVideoPlayer";
+import YouTubeVideoPlayer from "@/components/YouTubeVideoPlayer";
 
 export default function About() {
   return (
@@ -136,21 +136,21 @@ export default function About() {
 
         </div>
 
-        {/* Video Presentation Section */}
+        {/* Video Presentation Section (YouTube Interview Only) */}
         <div className="mt-16 pt-12 border-t border-sage-200/60 max-w-4xl mx-auto text-center">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-500/10 text-emerald-700 text-xs font-bold uppercase tracking-wider mb-6 font-sans">
             <Play className="w-3.5 h-3.5 fill-current" />
-            <span>Видео-визитка</span>
+            <span>Интервью с Хван Джин Оком</span>
           </div>
           <h3 className="text-2xl sm:text-3xl font-serif font-bold text-sage-950 mb-4">
-            Знакомство с брендом COSDOX
+            Большое интервью о здоровье и космецевтике
           </h3>
           <p className="text-sm text-[#171717]/70 font-sans max-w-2xl mx-auto mb-10 leading-relaxed font-light">
-            Посмотрите короткое видео, чтобы познакомиться поближе и узнать о философии здорового омоложения и наших передовых технологиях.
+            Посмотрите экспертное интервью на YouTube, чтобы узнать о философии здорового омоложения и нано-космецевтике COSDOX.
           </p>
-          
+
           <div className="max-w-[320px] lg:max-w-[960px] mx-auto px-4">
-            <CustomVideoPlayer src="/videos/about_video.mp4" />
+            <YouTubeVideoPlayer videoId="OKuEhhY_63M" startTime={86} title="Интервью: Здоровье, омоложение и нано-космецевтика COSDOX" />
           </div>
         </div>
 
