@@ -150,7 +150,7 @@ export default function About() {
           </p>
 
           <div className="max-w-[320px] lg:max-w-[960px] mx-auto px-4">
-            <YouTubeVideoPlayer videoId="OKuEhhY_63M" startTime={86} title="Интервью: Здоровье, омоложение и нано-космецевтика COSDOX" />
+            <YouTubeVideoPlayer videoId="OKuEhhY_63M" startTime={0} title="Интервью: Здоровье, омоложение и нано-космецевтика COSDOX" />
           </div>
         </div>
 

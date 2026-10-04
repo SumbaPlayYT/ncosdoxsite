@@ -11,7 +11,7 @@ interface YouTubeVideoPlayerProps {
 
 export default function YouTubeVideoPlayer({
   videoId = "OKuEhhY_63M",
-  startTime = 86,
+  startTime = 0,
   title = "Интервью: Здоровье, омоложение и нано-космецевтика COSDOX",
 }: YouTubeVideoPlayerProps) {
   const [isPlaying, setIsPlaying] = useState(false);
@@ -89,7 +89,7 @@ export default function YouTubeVideoPlayer({
                 {title}
               </p>
               <p className="text-xs text-white/70 font-sans mt-0.5">
-                Нажмите, чтобы смотреть со 2-й минуты (1:26)
+                Нажмите, чтобы смотреть полное видео
               </p>
             </div>
           </div>
