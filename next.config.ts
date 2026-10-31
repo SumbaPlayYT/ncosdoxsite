@@ -20,6 +20,32 @@ const nextConfig: NextConfig = {
   turbopack: {
     root: ".",
   },
+  async redirects() {
+    return [
+      {
+        source: "/:path*",
+        has: [
+          {
+            type: "host",
+            value: "cosdox.skin",
+          },
+        ],
+        destination: "https://cosdox.com.kz/:path*",
+        permanent: true,
+      },
+      {
+        source: "/:path*",
+        has: [
+          {
+            type: "host",
+            value: "www.cosdox.skin",
+          },
+        ],
+        destination: "https://cosdox.com.kz/:path*",
+        permanent: true,
+      },
+    ];
+  },
 };
 
 export default nextConfig;
